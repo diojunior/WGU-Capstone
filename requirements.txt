@@ -1,0 +1,8 @@
+Requirements for Capstone - DGabasan
+pandas
+numpy
+matplotlib
+ipywidgets
+sklearn
+IPython
+voila
