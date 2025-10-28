@@ -1,4 +1,3 @@
-Requirements for Capstone - DGabasan
 pandas
 numpy
 matplotlib
