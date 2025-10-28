@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score, silhouette_samples
 from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import cosine_similarity
-from IPython.display import display, clear_output
+from IPython.display import display, clear_output, HTML
 
 # reading in data and creating data frames to preprocess the data
 df = pd.read_csv("steam.csv")
@@ -184,5 +184,7 @@ def on_button_click(b):
                 display(recs)
         else:
             print("Please select a game.")
-button.on_click(on_button_click)
+ui = widgets.VBox([widgets.HBox([search_box, dropdown, button]), output])
+display(ui)
+
 display(search_box, dropdown, button, output)
